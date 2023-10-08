@@ -1,0 +1,321 @@
+nav {
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px rgba(129, 129, 129, 0.5);
+  margin-top: 30px;
+  position: absolute;
+
+  .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.navcenter {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+.header {
+  width: 100%;
+  top: 0;
+  z-index: -10;
+  position: absolute;
+  background-color: #f9f3f0;
+  .top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .t1 {
+      display: flex;
+      p {
+        margin-left: 10px;
+      }
+    }
+    .t2 {
+      display: flex;
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+  .bottom {
+    margin-top: 100px;
+    img {
+      width: 538px;
+      height: 433px;
+    }
+  }
+}
+.bottom {
+  margin-top: 100px;
+  height: auto;
+  // border-bottom: 1px solid red;
+  box-shadow: 0px -1px 5px 0px rgba(129, 129, 129, 0.75) inset;
+
+  img {
+    width: 538px;
+    height: 433px;
+  }
+
+  @media (max-width: 1000px) {
+    img {
+      width: 10px; // Ekran genişliği 768px'den küçükse, resmin genişliğini ekran genişliğine uyacak şekilde ayarlıyoruz.
+      height: auto; // Genişliği değiştiğinde oranı korumak için otomatik yükseklik atıyoruz.
+    }
+  }
+}
+
+.buttonlight {
+  width: 181px;
+  height: 59px;
+}
+.carousel-details {
+  height: 500px;
+}
+.contactbutton {
+  width: 200px;
+  height: 50px;
+}
+.carousel-content {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-main {
+  width: 300px !important;
+}
+.modal-backdrop {
+  z-index: 0 !important;
+}
+.preloader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 500px;
+    height: 500px;
+  }
+}
+.iconcard {
+  width: 159px !important;
+  height: 152px !important;
+  .cardiconimg {
+    width: 64px !important;
+    height: 64px !important;
+  }
+  .cardtext {
+    font-size: 18px !important;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 76vh;
+  display: flex;
+  .heroleft {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .pink {
+      color: #ff497c;
+    }
+    .deal {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 15px;
+        transform: translateY(-5px);
+        margin-right: 5px;
+      }
+    }
+    h1 {
+      letter-spacing: -0.03em;
+      margin-bottom: 50px;
+      font-size: 60px;
+      line-height: 1.2;
+      font-weight: bold;
+    }
+    button {
+      width: 181px;
+      height: 50px;
+    }
+  }
+  .heroright {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    // border: 1px solid red;
+    .img1 {
+      // border: 1px solid yellow;
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: auto;
+        height: 433px;
+      }
+    }
+    .img2 {
+      width: 30%;
+      display: flex;
+      img {
+        width: 160px;
+        margin-bottom: 10px;
+        height: 128px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .img1 img {
+    width: 330px !important;
+    height: auto !important;
+  }
+  .img2 img {
+    width: 90px !important;
+    height: auto !important;
+  }
+  .right img {
+    width: 230px !important;
+    height: auto !important;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 560px) {
+  .img1 img {
+    width: 280px !important;
+    height: auto !important;
+  }
+  .img2 img {
+    width: 80px !important;
+    height: auto !important;
+  }
+  .right img {
+    width: 180px !important;
+    margin-bottom: 50px;
+    height: auto !important;
+  }
+  .checkbtn{
+    padding: 10px 10px;
+  }
+}
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #F6F7FB;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    .checkbtn{
+        padding: 18px 35px;
+    }
+    span{
+      font-size: 48px;
+      font-weight: 600;
+      text-align: start;
+    }
+   .miss{
+    .fa-headphones{
+      margin-top: 1px;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    p{
+      font-size: 15px;
+      font-weight: 500;
+      color: #ff497c;
+    }
+   }
+  }
+  .right {
+    width: 50%;
+    height: 100%;
+    img{
+      width: 452px;
+      height: 502px;
+    }
+  }
+  .circlehour {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 15px;
+      margin-left: 10px;
+    }
+  }
+}
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.contact3 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.contact3 h1,
+.contact3 h2,
+.contact3 h3,
+.contact3 h4,
+.contact3 h5,
+.contact3 h6 {
+  color: #3e4555;
+}
+
+.contact3 .font-weight-medium {
+  font-weight: 500;
+}
+
+.contact3 .card-shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.contact3 .btn-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+}
+
+.contact3 .btn-danger-gradiant:hover {
+  background: #ff6a5b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+}
